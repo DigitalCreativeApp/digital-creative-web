@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Biểu tượng Digital Creative</title>
+  <rect width="48" height="48" rx="14" fill="#9C38EE"/>
+  <path d="M14 15.5h11.2c6.2 0 10.8 3.4 10.8 8.5s-4.6 8.5-10.8 8.5H14v-5.4h11c3.1 0 5-1.1 5-3.1s-1.9-3.1-5-3.1h-5.1v4.5H14v-9.9Z" fill="#fff"/>
+  <circle cx="35.5" cy="13" r="3" fill="#60D2AC"/>
+</svg>
