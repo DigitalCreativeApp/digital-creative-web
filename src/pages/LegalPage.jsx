@@ -37,7 +37,7 @@ export function LegalPage({ type }) {
 
   return (
     <>
-      <PageMeta title={`${content.title} — Digital Creative`} description={content.description} />
+      <PageMeta title={`${content.title} - Digital Creative`} description={content.description} />
       <header className="legal-hero" id="legal-top">
         <div className="container legal-hero-grid">
           <div>
@@ -76,7 +76,7 @@ export function LegalPage({ type }) {
                   <ContentBlock block={item} contactDetails={content.contactDetails} sectionNumber={index + 1} />
                 </section>
               ))}
-              <footer className="legal-end"><span>— HẾT —</span><a href="#legal-top">Về đầu trang ↑</a></footer>
+              <footer className="legal-end"><span>Kết thúc tài liệu</span><a href="#legal-top">Về đầu trang</a></footer>
             </article>
           </div>
         </div>

@@ -21,6 +21,17 @@ export function SiteLayout() {
     window.scrollTo({ top: 0 });
   }, [location.hash, location.pathname]);
 
+  useEffect(() => {
+    if (!menuOpen) return undefined;
+
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') setMenuOpen(false);
+    };
+
+    document.addEventListener('keydown', closeOnEscape);
+    return () => document.removeEventListener('keydown', closeOnEscape);
+  }, [menuOpen]);
+
   return (
     <>
       <a className="skip-link" href="#main-content">Bỏ qua điều hướng</a>
@@ -32,9 +43,9 @@ export function SiteLayout() {
             type="button"
             aria-expanded={menuOpen}
             aria-controls="main-nav"
+            aria-label={menuOpen ? 'Đóng menu' : 'Mở menu'}
             onClick={() => setMenuOpen((value) => !value)}
           >
-            <span className="sr-only">{menuOpen ? 'Đóng menu' : 'Mở menu'}</span>
             <span /><span />
           </button>
           <nav className={`main-nav ${menuOpen ? 'is-open' : ''}`} id="main-nav" aria-label="Điều hướng chính">
